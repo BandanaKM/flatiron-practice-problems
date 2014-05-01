@@ -16,19 +16,6 @@ school = {
 }
 
 
-# i. Write a statement to print out all the values in the school. ***FLAG
-
-
-
-
-
-
-
-
-
-
-
-
 # a. Add a key to the school hash called "founded_in" and set it to the value 2013.
 
 school[:founded_in] = 2013
@@ -72,9 +59,4 @@ end
 school[:instructors].each do |person|
   puts person[:subject] if person[:name] == "Jeff"
 end 
-
-
-# i. Write a statement to print out all the values in the school. ***FLAG
-
-
 
