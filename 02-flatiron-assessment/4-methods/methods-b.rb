@@ -20,11 +20,16 @@ school = {
 
 def output_grade(school, instructor_name, new_subject)
   school[:instructors].each do |person|
-  	if person[:name] == instructor_name
-  		person[:subject] == new_subject  
-  		puts person[:subject]
-  	end
+    if person[:name] == instructor_name
+      person[:subject] = new_subject  
+      puts person[:subject]
+    end
   end 
 end  
 
-output_grade(school, instructor_name, new_subject)
+output_grade(school, "Blake", "being terrible")
+
+puts school
+
+#this works. assignment always uses = 
+#also note that we're outputting the entire hash again at the end 
