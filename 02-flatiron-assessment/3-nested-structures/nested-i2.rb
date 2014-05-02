@@ -16,7 +16,6 @@ school = {
 }
 
 
-
 school.each do |key, value|
   if value.is_a?(String) || value.is_a?(Fixnum)
     puts value
@@ -36,5 +35,23 @@ school.each do |key, value|
 
 end 
 
+# Output:
+
+# Happy Funtime School
+# NYC
+# Blake
+# being awesome
+# Ashley
+# being better than blake
+# Jeff
+# karaoke
+# Marissa
+# B
+# Billy
+# F
+# Frank
+# A
+# Sophie
+# C
 
 
