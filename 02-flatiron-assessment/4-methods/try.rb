@@ -1,3 +1,4 @@
+# b. i.Create a method to update a instructor's subject given the instructor and the new subject. ii. Then use it to update Blake's subject to "being terrible".
 
 
 school = { 
@@ -17,45 +18,20 @@ school = {
 }
 
 
-def output_grade(school, student_name)
-  school.each do |key, value|
-    if value.is_a?(String) || value.is_a?(Fixnum)
-      puts value
-    elsif key == :instructors
-      value.each do |instructor_hash|  
-        instructor_hash.each_value do |value|
-          puts value
-        end
-      end
-    elsif key == :students
-      school[:students].each do |person|
-      puts person[:grade] if person[:name] == student_name 
-      end
-    end 
+def output_grade(school, instructor_name, new_subject)
+  school[:instructors].each do |person|
+    if person[:name] == instructor_name
+      person[:subject] = new_subject  
+      puts person[:subject]
+    end
+  end 
+end  
 
-end 
+output_grade(school, "Blake", "being terrible")
 
-end
+puts school
 
-output_grade(school, "Sophie")
-
-# Output:
-
-# Happy Funtime School
-# NYC
-# Blake
-# being awesome
-# Ashley
-# being better than blake
-# Jeff
-# karaoke
-# Marissa
-# B
-# Billy
-# F
-# Frank
-# A
-# Sophie
-# C
+#this works. assignment always uses = 
+#also note that we're outputting the entire hash again at the end 
 
 
