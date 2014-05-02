@@ -1,3 +1,5 @@
+# c. i. Create a method to add a new student to the schools student array. ii. Then use it to add yourself to the school students array.
+
 
 
 school = { 
@@ -23,6 +25,7 @@ end
 
 add_student(school, "Bandana", "Q")
 
+puts school
 
 
 #this doesn't work because you have an array of hashes, and you are adding it on to the last hash, as a key value pair within that hash
