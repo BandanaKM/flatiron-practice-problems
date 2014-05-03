@@ -1,7 +1,6 @@
 # c. i. Create a method to add a new student to the schools student array. ii. Then use it to add yourself to the school students array.
 
 
-
 school = { 
   :name => "Happy Funtime School",
   :location => "NYC",
@@ -33,7 +32,6 @@ puts school
 # def add_student(school, new_student, student_grade)
 #   school[:students].last.store(new_student, student_grade)
 # end  
-
 
 # add_student(school, "Bana", "Q")
 # # puts school
