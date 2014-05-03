@@ -18,12 +18,10 @@ school = {
 
 
 def new_first_element(school, element_key, element_value)
-
 	hash = {}
 	hash[element_key.to_sym] = element_value
 	hash.merge!(school)
 	school.replace(hash)
-
 end
 
 puts new_first_element(school, "Ranking", 1)
@@ -48,6 +46,8 @@ puts new_first_element(school, "Ranking", 1)
 # {:element_key=>"element_value", :name=>"Happy Funtime School", :location=>"NYC", :instructors=>[{:name=>"Blake", :subject=>"being awesome"}, {:name=>"Ashley", :subject=>"being better than blake"}, {:name=>"Jeff", :subject=>"karaoke"}], :students=>[{:name=>"Marissa", :grade=>"B"}, {:name=>"Billy", :grade=>"F"}, {:name=>"Frank", :grade=>"A"}, {:name=>"Sophie", :grade=>"C"}]}
 
 
+
+# TRY 
 
 # Another possible way?
 
